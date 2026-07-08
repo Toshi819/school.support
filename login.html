@@ -8,7 +8,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1.0">
  
-    <title>StudyHub - 新規登録</title>
+    <title>StudyHub - ログイン</title>
  
     <link rel="stylesheet" href="style.css">
  
@@ -27,91 +27,78 @@
             <i class="fa-solid fa-book-open"></i>
         </div>
  
-        <h1>新規登録</h1>
+        <h1>StudyHub</h1>
  
         <p class="subtitle">
-            StudyHubアカウントを作成
+ 
+            学習をもっと便利に
+ 
         </p>
  
-        <form id="registerForm">
+        <form id="loginForm">
  
             <div class="input-group">
  
-                <label for="username">
-                    ユーザー名
+                <label>
+                    ユーザーID
                 </label>
  
                 <input
                     type="text"
-                    id="username"
-                    placeholder="ユーザー名を入力"
-                    maxlength="20"
-                    required>
+                    id="userId"
+                    placeholder="SH-000001">
  
             </div>
  
             <div class="input-group">
  
-                <label for="password">
+                <label>
                     パスワード
                 </label>
  
                 <input
                     type="password"
                     id="password"
-                    placeholder="パスワードを入力"
-                    required>
- 
-            </div>
- 
-            <div class="input-group">
- 
-                <label for="password2">
-                    パスワード確認
-                </label>
- 
-                <input
-                    type="password"
-                    id="password2"
-                    placeholder="もう一度入力"
-                    required>
+                    placeholder="パスワード">
  
             </div>
  
             <button
                 type="submit"
-                class="main-btn"
-                id="registerBtn">
+                class="main-btn">
  
-                <i class="fa-solid fa-user-plus"></i>
-                アカウント作成
+                <i class="fa-solid fa-right-to-bracket"></i>
+ 
+                ログイン
  
             </button>
  
         </form>
  
-        <div id="message" class="message"></div>
+        <div id="message"
+             class="message"></div>
  
         <div class="divider">
+ 
             <span>または</span>
+ 
         </div>
  
         <button
-            type="button"
             class="google-btn"
-            id="googleRegister">
+            id="googleLogin">
  
             <i class="fa-brands fa-google"></i>
  
-            Googleで登録
+            Googleでログイン
  
         </button>
  
         <div class="bottom-links">
  
-            <a href="login.html">
+            <a href="register.html">
  
-                ログインはこちら
+                新規登録はこちら
  
             </a>
  
@@ -121,8 +108,10 @@
  
 </div>
  
-<script type="module" src="js/register.js"></script>
+<script type="module"
+src="js/login.js"></script>
  
 </body>
  
 </html>
+ 
